@@ -1,0 +1,47 @@
+let btn = document.getElementById('btn');
+let output = document.getElementById('output');
+let bibleVerses = 
+[
+  "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.<br>John 3:16",
+
+  "For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future.<br>Jeremiah 29:11",
+
+  "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.<br>Romans 8:28",
+
+  "I can do everything through him who gives me strength.<br>Philippians 4:13",
+
+  "In the beginning God created the heavens and the earth.<br>Genesis 1:1",
+
+  "Trust in the LORD with all your heart and lean not on your own understanding.<br>Proverbs 3:5",
+
+  "In all your ways acknowledge him, and he will make your paths straight.<br>Proverbs 3:6",
+
+  "Do not conform any longer to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is—his good, pleasing and perfect will.<br>Romans 12:2",
+
+  "Do not be anxious about anything, but in everything, by prayer and petition, with thanksgiving, present your requests to God.<br>Philippians 4:6",
+
+  "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.<br>Matthew 28:19"
+];
+
+let images = 
+[
+  "https://images.unsplash.com/photo-1564053489984-317bbd824340?q=80&w=1792&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1875&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  "https://images.unsplash.com/photo-1500964757637-c85e8a162699?q=80&w=1803&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+]
+
+btn.addEventListener('click', () => {
+  const randomVerse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
+  output.innerHTML = randomVerse;
+
+  const newImage = images[Math.floor(Math.random() * images.length)];
+  document.body.background = newImage;
+  document.body.style.backgroundSize = 'cover';
+})

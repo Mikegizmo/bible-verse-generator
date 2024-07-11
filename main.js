@@ -16,12 +16,47 @@ let bibleVerses =
 
   "In all your ways acknowledge him, and he will make your paths straight.<br>Proverbs 3:6",
 
-  "Do not conform any longer to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is—his good, pleasing and perfect will.<br>Romans 12:2",
+  "Do not conform any longer to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God's will is—his good, pleasing and perfect will.<br>Romans 12:2",
 
   "Do not be anxious about anything, but in everything, by prayer and petition, with thanksgiving, present your requests to God.<br>Philippians 4:6",
 
   "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.<br>Matthew 28:19"
 ];
+
+let bibleVerses2 = [
+  {
+    translation:'NIV',
+    verse:"John 3:16",
+    verseText:"For God so loved the world that he gave his one and only Son, that whoever believes in Him shall not perish but have eternal life."
+  },
+  {
+    translation:'NASB',
+    verse:"John 3:16",
+    verseText:"For God so loved the world, that He gave His only Son, so that everyone who believes in Him will not perish, but have eternal life."
+  },
+  {
+    translation:'ESV',
+    verse:"John 3:16",
+    verseText:"For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life."
+  },
+  {
+    translation:'NIV',
+    verse:"Jeremiah 29:11",
+    verseText:"For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    translation:'NASB',
+    verse: "Jeremiah 29:11",
+    verseText:" For I know the plans that I have for you, declares the Lord, plans for prosperity and not for disaster, to give you a future and a hope.",
+  },
+  {
+    translation:'ESV',
+    verse:"Jeremiah 29:11",
+    verseText:"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope."
+  }
+
+  
+]
 
 let images = 
 [
@@ -38,8 +73,8 @@ let images =
 ]
 
 btn.addEventListener('click', () => {
-  const randomVerse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
-  output.innerHTML = randomVerse;
+  const randomVerse = bibleVerses2[Math.floor(Math.random() * bibleVerses2.length)];
+  output.innerHTML = randomVerse.verseText + '<br>' + randomVerse.verse + ' ' + randomVerse.translation;
 
   const newImage = images[Math.floor(Math.random() * images.length)];
   document.body.background = newImage;

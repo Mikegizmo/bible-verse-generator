@@ -7,27 +7,65 @@ body {
   position: relative;
 }
 
-#container {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background-color: rgba(60, 60, 60, 0.5);
-  border: 5px solid #333;
-  height: 25rem;
-  width: 30rem;
-  margin: 20px;
-  text-align: center;
-  border-radius: 20px;
+@media screen and (max-width: 800px)
+{
+  #container {
+    position: absolute;
+    
+    bottom: 0px;
+    background-color: rgba(60, 60, 60, 0.5);
+    border: 5px solid #333;
+    height: 45%;
+    width: 80%;
+    margin: 5rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-#btn {
-  margin: 2rem auto;
-  height: 5rem;
-  width: 10rem;
-  font-size: 1.25rem;
-  background-color: yellow;
-  color: navy;
-  border-radius: 10px;
+@media screen and (min-width: 801px)
+{
+  #container {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(60, 60, 60, 0.5);
+    border: 5px solid #333;
+    height: 35%;
+    width: 35%;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
+  #btn {
+    margin-bottom: auto;
+    margin: auto;
+    height: 4rem;
+    width: 12rem;
+    font-size: 1.25rem;
+    background-color: yellow;
+    color: navy;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 801px)
+{
+  #btn {
+    margin: 1rem auto;
+    height: 5rem;
+    width: 10rem;
+    font-size: 1.25rem;
+    background-color: yellow;
+    color: navy;
+    border-radius: 10px;
+  }
 }
 
 #btn:hover {
@@ -38,5 +76,5 @@ body {
 #output {
   color: white;
   font-size: 1.5rem;
-  padding: 1.5rem;
+  margin: 1rem;
 }

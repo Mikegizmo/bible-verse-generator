@@ -58,7 +58,7 @@ let bibleVerses2 = [
   
 ]
 
-let images = 
+const imagesLandscape = 
 [
   "https://images.unsplash.com/photo-1564053489984-317bbd824340?q=80&w=1792&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
@@ -72,11 +72,34 @@ let images =
 
 ]
 
+const imagesPortrait = 
+[
+  "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8MXwwfHx8MA%3D%3D",
+
+  "https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  "https://images.unsplash.com/photo-1455218873509-8097305ee378?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  "https://plus.unsplash.com/premium_photo-1675433344518-21eb72dfc7a5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+]
+
 btn.addEventListener('click', () => {
   const randomVerse = bibleVerses2[Math.floor(Math.random() * bibleVerses2.length)];
   output.innerHTML = randomVerse.verseText + '<br>' + randomVerse.verse + ' ' + randomVerse.translation;
 
-  const newImage = images[Math.floor(Math.random() * images.length)];
+  let width = window.innerWidth;
+  console.log(width);
+  let imageSet;
+
+  width > 800 ? imageSet = imagesLandscape : imageSet = imagesPortrait; 
+
+  const newImage = imageSet[Math.floor(Math.random() * imageSet.length)];
   document.body.background = newImage;
   document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundAttachment = 'fixed';
+  document.body.style.backgroundPosition = 'center';
+  document.body.style.backgroundRepeat = 'no-repeat';
+  document.body.style.objectFit = 'contain';
 })

@@ -53,6 +53,21 @@ let bibleVerses2 = [
     translation:'ESV',
     verse:"Jeremiah 29:11",
     verseText:"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope."
+  },
+  {
+    translation:'NIV',
+    verse:"Psalm 139:14",
+    verseText:"I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well."
+  },
+  {
+    translation:'NASB',
+    verse:"Psalm 139:14",
+    verseText:"I will give thanks to You, because I am awesomely and wonderfully made; Wonderful are Your works, And my soul knows it very well."
+  },
+  {
+    translation:'ESV',
+    verse:"Psalm 139:14",
+    verseText:"I praise you, for I am fearfully and wonderfully made. Wonderful are your works; my soul knows it very well."
   }
 
   
@@ -70,6 +85,16 @@ const imagesLandscape =
 
   "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
+  "https://images.pexels.com/photos/602794/pexels-photo-602794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  "https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  "https://images.pexels.com/photos/456710/pexels-photo-456710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  "https://images.pexels.com/photos/259881/pexels-photo-259881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  "https://images.pexels.com/photos/417083/pexels-photo-417083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+
 ]
 
 const imagesPortrait = 
@@ -82,7 +107,13 @@ const imagesPortrait =
 
   "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
-  "https://plus.unsplash.com/premium_photo-1675433344518-21eb72dfc7a5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  "https://plus.unsplash.com/premium_photo-1675433344518-21eb72dfc7a5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  "https://images.pexels.com/photos/2877375/pexels-photo-2877375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  "https://images.pexels.com/photos/1336924/pexels-photo-1336924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 ]
 
 btn.addEventListener('click', () => {

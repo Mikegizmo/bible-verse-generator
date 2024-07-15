@@ -122,11 +122,13 @@ btn.addEventListener('click', () => {
 
   let width = window.innerWidth;
   console.log(width);
+  let titleContainer = document.getElementById('titleContainer');
   let imageSet;
 
   width > 800 ? imageSet = imagesLandscape : imageSet = imagesPortrait; 
 
   const newImage = imageSet[Math.floor(Math.random() * imageSet.length)];
+  titleContainer.style.display = 'none';
   document.body.background = newImage;
   document.body.style.backgroundSize = 'cover';
   document.body.style.backgroundAttachment = 'fixed';

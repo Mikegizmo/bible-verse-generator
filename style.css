@@ -1,15 +1,35 @@
+* {
+  font-family: "Cardo", serif;
+}
+
 body {
   background-color: navy;
 }
 
 .outer {
   height: 100vh;
+  width: 100vw;
   position: relative;
+}
+
+#titleContainer {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  color: yellow;
+}
+
+#titleContainer h1 {
+  font-size: 3rem;
+}
+
+#titleContainer h3 {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 800px)
 {
-  #container {
+  #textContainer {
     position: absolute;
     
     bottom: 0px;
@@ -27,13 +47,13 @@ body {
 
 @media screen and (min-width: 801px)
 {
-  #container {
+  #textContainer {
     position: absolute;
     left: 0px;
     bottom: 0px;
     background-color: rgba(60, 60, 60, 0.5);
     border: 5px solid #333;
-    height: 35%;
+    height: 45%;
     width: 35%;
     margin: 2rem;
     text-align: center;
@@ -46,9 +66,11 @@ body {
   #btn {
     margin-bottom: auto;
     margin: auto;
-    height: 4rem;
-    width: 12rem;
-    font-size: 1.25rem;
+    margin-top: 1rem;
+    height: 5rem;
+    width: 14rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     background-color: yellow;
     color: navy;
     border-radius: 10px;
@@ -75,6 +97,6 @@ body {
 
 #output {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin: 1rem;
 }

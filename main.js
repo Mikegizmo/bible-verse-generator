@@ -113,7 +113,11 @@ const imagesPortrait =
 
   "https://images.pexels.com/photos/2877375/pexels-photo-2877375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 
-  "https://images.pexels.com/photos/1336924/pexels-photo-1336924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  "https://images.pexels.com/photos/1336924/pexels-photo-1336924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  "https://images.pexels.com/photos/1624504/pexels-photo-1624504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  "https://images.pexels.com/photos/3214944/pexels-photo-3214944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 ]
 
 btn.addEventListener('click', () => {
@@ -121,11 +125,13 @@ btn.addEventListener('click', () => {
   output.innerHTML = randomVerse.verseText + '<br>' + randomVerse.verse + ' ' + randomVerse.translation;
 
   let width = window.innerWidth;
+  let height = window.innerHeight;
   console.log(width);
   let titleContainer = document.getElementById('titleContainer');
   let imageSet;
 
   width > 800 ? imageSet = imagesLandscape : imageSet = imagesPortrait; 
+  height > width ? imageSet = imagesPortrait: imageSet = imagesLandscape;
 
   const newImage = imageSet[Math.floor(Math.random() * imageSet.length)];
   titleContainer.style.display = 'none';

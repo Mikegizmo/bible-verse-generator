@@ -1,5 +1,6 @@
 let btn = document.getElementById('btn');
 let output = document.getElementById('output');
+let topDiv = document.getElementById('topDiv');
 let newBtn = document.getElementById('newBtn');
 
 let bibleVerses = 
@@ -130,8 +131,6 @@ btn.addEventListener('click', () => {
   let height = window.innerHeight;
   console.log(width);
   let titleContainer = document.getElementById('titleContainer');
-  let btn = document.getElementById('btn');
-  let newBtn = document.getElementById('newBtn');
   let imageSet;
 
   width > 800 ? imageSet = imagesLandscape : imageSet = imagesPortrait; 
@@ -140,7 +139,9 @@ btn.addEventListener('click', () => {
   const newImage = imageSet[Math.floor(Math.random() * imageSet.length)];
   titleContainer.style.display = 'none';
   btn.style.display = 'none';
-  newBtn.style.display = 'block';
+  topDiv.style.display = 'flex';
+  topDiv.style.flexDirection ='row';
+  topDiv.style.justifyContent = 'space-between';
   document.body.background = newImage;
   document.body.style.backgroundSize = 'cover';
   document.body.style.backgroundAttachment = 'fixed';
@@ -169,3 +170,19 @@ newBtn.addEventListener('click', () => {
   document.body.style.backgroundRepeat = 'no-repeat';
   document.body.style.objectFit = 'contain';
 })  
+
+let modal = document.getElementById('infoModal');
+let modalBtn = document.getElementById('modalBtn');
+let span = document.getElementsByClassName('close')[0];
+
+modalBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+})
+
+span.onclick = () => {
+  modal.style.display = 'none';
+}
+
+window.onclick = (event) => {
+  modal.style.display = 'none';
+}

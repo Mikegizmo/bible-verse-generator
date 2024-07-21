@@ -6,12 +6,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Bible Verse Generator</title>
 </head>
 <body>
   <div class="outer">
-    <button id="newBtn" style='display: none;'>Touch Verse</button>
+    <div id='topDiv'>
+      <button id="newBtn">Touch Verse</button>
+      <button id='modalBtn'>?</button>
+      <div id='infoModal' class='modal'>
+        <div class='modal-content'>
+          <span class='close'>&times;</span>
+          <p id='modalInfo'></p>
+        </div>
+      </div>
+    </div>
+    
     <div id="titleContainer">
       <h1>Welcome to Touch Verse</h1>
       <h3>Touch the button to generate a new Bible verse and image</h3>

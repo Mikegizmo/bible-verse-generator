@@ -1,5 +1,7 @@
 let btn = document.getElementById('btn');
 let output = document.getElementById('output');
+let newBtn = document.getElementById('newBtn');
+
 let bibleVerses = 
 [
   "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.<br>John 3:16",
@@ -128,6 +130,8 @@ btn.addEventListener('click', () => {
   let height = window.innerHeight;
   console.log(width);
   let titleContainer = document.getElementById('titleContainer');
+  let btn = document.getElementById('btn');
+  let newBtn = document.getElementById('newBtn');
   let imageSet;
 
   width > 800 ? imageSet = imagesLandscape : imageSet = imagesPortrait; 
@@ -135,6 +139,8 @@ btn.addEventListener('click', () => {
 
   const newImage = imageSet[Math.floor(Math.random() * imageSet.length)];
   titleContainer.style.display = 'none';
+  btn.style.display = 'none';
+  newBtn.style.display = 'block';
   document.body.background = newImage;
   document.body.style.backgroundSize = 'cover';
   document.body.style.backgroundAttachment = 'fixed';
@@ -142,3 +148,24 @@ btn.addEventListener('click', () => {
   document.body.style.backgroundRepeat = 'no-repeat';
   document.body.style.objectFit = 'contain';
 })
+
+newBtn.addEventListener('click', () => {
+  const randomVerse = bibleVerses2[Math.floor(Math.random() * bibleVerses2.length)];
+  output.innerHTML = randomVerse.verseText + '<br>' + randomVerse.verse + ' ' + randomVerse.translation;
+
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+
+  let imageSet;
+
+  width > 800 ? imageSet = imagesLandscape : imageSet = imagesPortrait; 
+  height > width ? imageSet = imagesPortrait: imageSet = imagesLandscape;
+
+  const newImage = imageSet[Math.floor(Math.random() * imageSet.length)];
+  document.body.background = newImage;
+  document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundAttachment = 'fixed';
+  document.body.style.backgroundPosition = 'center';
+  document.body.style.backgroundRepeat = 'no-repeat';
+  document.body.style.objectFit = 'contain';
+})  

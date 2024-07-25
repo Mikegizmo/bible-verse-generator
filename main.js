@@ -11,29 +11,9 @@ let bibleVerses = [
     verseText:"For God so loved the world that he gave his one and only Son, that whoever believes in Him shall not perish but have eternal life."
   },
   {
-    translation:'NASB',
-    verse:"John 3:16",
-    verseText:"For God so loved the world, that He gave His only Son, so that everyone who believes in Him will not perish, but have eternal life."
-  },
-  {
-    translation:'ESV',
-    verse:"John 3:16",
-    verseText:"For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life."
-  },
-  {
     translation:'NIV',
     verse:"Jeremiah 29:11",
     verseText:"For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
-  },
-  {
-    translation:'NASB',
-    verse: "Jeremiah 29:11",
-    verseText:" For I know the plans that I have for you, declares the Lord, plans for prosperity and not for disaster, to give you a future and a hope.",
-  },
-  {
-    translation:'ESV',
-    verse:"Jeremiah 29:11",
-    verseText:"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope."
   },
   {
     translation:'NIV',
@@ -41,29 +21,9 @@ let bibleVerses = [
     verseText:"I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well."
   },
   {
-    translation:'NASB',
-    verse:"Psalm 139:14",
-    verseText:"I will give thanks to You, because I am awesomely and wonderfully made; Wonderful are Your works, And my soul knows it very well."
-  },
-  {
-    translation:'ESV',
-    verse:"Psalm 139:14",
-    verseText:"I praise you, for I am fearfully and wonderfully made. Wonderful are your works; my soul knows it very well."
-  },
-  {
     translation:'NIV',
     verse:"Philippians 4:13",
     verseText:"I can do all this through him who gives me strength."
-  },
-  {
-    translation:'NASB',
-    verse:"Philippians 4:13",
-    verseText:"I can do all things through Him who strengthens me."
-  },
-  {
-    translation:'ESV',
-    verse:"Philippians 4:13",
-    verseText:"I can do all things through him who strengthens me."
   },
   {
     translation:'NIV',
@@ -71,15 +31,35 @@ let bibleVerses = [
     verseText:"Trust in the Lord with all your heart and lean not on your own understanding."
   },
   {
-    translation:'NASB',
-    verse:"Proverbs 3:5",
-    verseText:"Trust in the Lord with all your heart and do not lean on your own understanding."
+    translation:'NIV',
+    verse:"Luke 19:10", 
+    verseText:"For the Son of Man came to seek and to save the lost."
   },
   {
-    translation:'ESV',
-    verse:"Proverbs 3:5",
-    verseText:"Trust in the LORD with all your heart, and do not lean on your own understanding."
+    translation:'NIV',
+    verse:"Psalm 56:3",
+    verseText:"When I am afraid, I put my trust in you."
   },
+  {
+    translation:'NIV',
+    verse:"Proverbs 17:17",
+    verseText:"A friend loves at all times, and a brother is born for a time of adversity."
+  },
+  {
+    translation:'NIV',
+    verse:"1 Peter 5:7",
+    verseText:"Cast all your anxiety on him because he cares for you."
+  },
+  {
+    translation:'NIV',
+    verse:"John 16:33",
+    verseText:"In this world you will have trouble.  But take heart! I have overcome the world."
+  },
+  {
+    translation:'NIV',
+    verse:"Matthew 11:28",
+    verseText:"Come to me, all of you who are weary and burdened, and I will give you rest."
+  }
 
   
 ]
@@ -109,6 +89,21 @@ const imagesLandscape =
   {
     image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     photographer: "v2osk",
+    source: "Unsplash"
+  },
+  {
+    image: "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    photographer: "Mark Harpur",
+    source: "Unsplash"
+  },
+  {
+    image: "https://images.unsplash.com/photo-1535961652354-923cb08225a7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    photographer: "Simon Berger",
+    source: "Unsplash"
+  },
+  {
+    image: "https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    photographer: "Arno Smit",
     source: "Unsplash"
   },
   {

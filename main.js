@@ -59,9 +59,27 @@ let bibleVerses = [
     translation:'NIV',
     verse:"Matthew 11:28",
     verseText:"Come to me, all of you who are weary and burdened, and I will give you rest."
+  },
+  {
+    translation:'NIV',
+    verse:"Romans 5:8",
+    verseText:"But God demonstrates his own love for us in this: While we were still sinners, Christ died for us."
+  },
+  {
+    translation:'NIV',
+    verse:"Romans 3:23",
+    verseText:"For all have sinned and fall short of the glory of God."
+  },
+  {
+    translation:'NIV',
+    verse:"Romans 3:10",
+    verseText:"As it is written: There is no one righteous, not even one."
+  },
+  {
+    translation:'NIV',
+    verse:"Romans 10:13",
+    verseText:"For everyone who calls on the name of the Lord will be saved."
   }
-
-  
 ]
 
 const imagesLandscape = 
@@ -161,6 +179,11 @@ const imagesPortrait =
     source: "Unsplash"
   },
   {
+    image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    photographer: "Jeremy Bishop",
+    source: "Unsplash"
+  },
+  {
     image: "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     photographer: "Michael Block",
     source: "Pexels"
@@ -183,6 +206,11 @@ const imagesPortrait =
   {
     image: "https://images.pexels.com/photos/3214944/pexels-photo-3214944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     photographer: "Alex Azabache",
+    source: "Pexels"
+  },
+  {
+    image: "https://images.pexels.com/photos/27410833/pexels-photo-27410833/free-photo-of-waterfall.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    photographer: "ArWeltAtty Attila",
     source: "Pexels"
   }
 ]

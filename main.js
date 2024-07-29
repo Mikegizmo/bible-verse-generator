@@ -79,6 +79,21 @@ let bibleVerses = [
     translation:'NIV',
     verse:"Romans 10:13",
     verseText:"For everyone who calls on the name of the Lord will be saved."
+  },
+  {
+    translation:'NIV',
+    verse:"Romans 1:5",
+    verseText:"The light shines in the darkness, and the darkness has not overcome it."
+  },
+  {
+    translation:'NIV',
+    verse:"Ephesians 2:10",
+    verseText:"For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do."
+  },
+  {
+    translation:'NIV',
+    verse:"Psalm 145:8",
+    verseText:"The Lord is gracious and compassionate, slow to anger and rich in love."
   }
 ]
 

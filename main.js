@@ -88,12 +88,22 @@ let bibleVerses = [
   {
     translation:'NIV',
     verse:"Ephesians 2:10",
-    verseText:"For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do."
+    verseText:"For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do."
   },
   {
     translation:'NIV',
     verse:"Psalm 145:8",
     verseText:"The Lord is gracious and compassionate, slow to anger and rich in love."
+  },
+  {
+    translation:'NIV',
+    verse:"Psalm 46:10",
+    verseText:"Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth."
+  },
+  {
+    translation:'NIV',
+    verse:"Luke 19:10",
+    verseText:"For the Son of Man came to seek and to save the lost."
   }
 ]
 

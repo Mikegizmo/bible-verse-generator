@@ -104,6 +104,16 @@ let bibleVerses = [
     translation:'NIV',
     verse:"Luke 19:10",
     verseText:"For the Son of Man came to seek and to save the lost."
+  },
+  {
+    translation:'ESV',
+    verse:"Isaiah 43:1",
+    verseText:"Fear not, for I have redeemed you; I have called you by name, you are mine."
+  }, 
+  {
+    translation:'NIV',
+    verse:"1 Thessalonians 5:18",
+    verseText:"Give thanks in all circumstances; for this is God's will for you in Christ Jesus."
   }
 ]
 
@@ -150,6 +160,11 @@ const imagesLandscape =
     source: "Unsplash"
   },
   {
+    image: "https://images.pexels.com/photos/27508774/pexels-photo-27508774/free-photo-of-arches-national-park-in-utah.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    photographer: "Igor Passachier",
+    source: "Pexels"
+  },
+  {
     image: "https://images.pexels.com/photos/602794/pexels-photo-602794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     photographer: "David Bartus",
     source: "Pexels"
@@ -173,6 +188,16 @@ const imagesLandscape =
     image: "https://images.pexels.com/photos/417083/pexels-photo-417083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     photographer: "Pixabay",
     source: "Pexels"
+  },
+  {
+    image: "https://i0.wp.com/picjumbo.com/wp-content/uploads/aurora-borealis-over-the-river-free-photo.jpeg?w=2210&quality=70",
+    photographer: "Victor Hanacek",
+    source: "Picjumbo"
+  },
+  {
+    image: "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-spring-forest-morning-free-photo.jpg?w=2210&quality=70",
+    photographer: "Victor Hanacek",
+    source: "Picjumbo"
   }
 ]
 

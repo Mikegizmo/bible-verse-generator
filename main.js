@@ -114,6 +114,26 @@ let bibleVerses = [
     translation:'NIV',
     verse:"1 Thessalonians 5:18",
     verseText:"Give thanks in all circumstances; for this is God's will for you in Christ Jesus."
+  },
+  {
+    translation:'ESV',
+    verse:"Psalm 188:14",
+    verseText:"The Lord is my strength and my song; he has become my salvation."
+  },
+  {
+    translation:'NIV',
+    verse:"Matthew 5:16",
+    verseText:"In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven."
+  },
+  {
+    translation:'NIV',
+    verse:"Proverbs 17:22",
+    verseText:"A cheerful heart is good medicine, but a crushed spirit dries up the bones."
+  },
+  {
+    translation:'NIV',
+    verse:"John 14:6",
+    verseText:'Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."'
   }
 ]
 
